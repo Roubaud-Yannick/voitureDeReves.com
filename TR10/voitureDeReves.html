@@ -3,53 +3,55 @@
 		<head>
 		<meta charset="UTF-8">
 		<title>Mon Site</title>
-		<script src="JS/leJS.js"> </script>
+		<script src="JS/voitureDeReves.js"> </script>
 		<link type="text/css" rel="stylesheet" href="">
 		</head>
-		<body>
+		<body onload="chargement()">
 			<section>
 				<form id="formulaireVoiture" action=# onSubmit="return afficherVoiture(this)"><br>
 					<fieldset>
 						<legend>La voiture de vos rêves</legend>
+						<label for="nom">Nom:</label>
+						<input type="text" id="nom" name="nom" required><br>
 						<label for="genre">Quel genre recherchez vous ? :</label>
 						<select id="genre" name="genre"> 
-							<option value="sedan">Sedan</option>
-							<option value="hatchback">Hatchback</option>
-							<option value="roadster">Roadster</option>
+							<option value="Sedan">Sedan</option>
+							<option value="Hatchback">Hatchback</option>
+							<option value="Roadster">Roadster</option>
 							<option value="CUV">CUV</option>
 							<option value="SUV">SUV</option>
-							<option value="pickup">Pickup</option>
-							<option value="micro">Micro</option>
-							<option value="cabriolet">Cabriolet</option>
-							<option value="supercar">Supercar</option>
-							<option value="coupe">Coupe</option>
-							<option value="van">Van</option>
-							<option value="miniVan">MiniVan</option>
-							<option value="camperVan">Campervan</option>
-							<option value="truck">Truck</option>
-							<option value="bigTruck">BigTruck</option>
+							<option value="Pickup">Pickup</option>
+							<option value="Micro">Micro</option>
+							<option value="Cabriolet">Cabriolet</option>
+							<option value="Supercar">Supercar</option>
+							<option value="Coupe">Coupe</option>
+							<option value="Van">Van</option>
+							<option value="MiniVan">MiniVan</option>
+							<option value="CamperVan">Campervan</option>
+							<option value="Truck">Truck</option>
+							<option value="BigTruck">BigTruck</option>
 						</select><br>
 						<label for="couleur" name="couleur">De quel couleur voudriez vous qu'elle soit ?</label>
 						<select id="couleur" name="couleur"> 
-							<option value="rouge">Rouge</option>
-							<option value="jaune">Jaune</option>
-							<option value="vert">Vert</option>
-							<option value="bleu">Bleu</option>
-							<option value="rose">Rose</option>
-							<option value="mauve">Mauve</option>	
-							<option value="blanc">Blanc</option>
-							<option value="noir">Noir</option>
+							<option value="Rouge">Rouge</option>
+							<option value="Jaune">Jaune</option>
+							<option value="Verte">Vert</option>
+							<option value="Bleue">Bleue</option>
+							<option value="Rose">Rose</option>
+							<option value="Mauve">Mauve</option>	
+							<option value="Blanche">Blanche</option>
+							<option value="Noire">Noir</option>
 						</select><br>
 						<label for="dessins">Quel genre de dessins aimeriez vous sur cette voiture ? </label><br>
-						<input id="dessinsNul" type="radio" name="dessins" value="nul" required>
+						<input id="dessinsNul" type="radio" name="dessins" value="/" required>
 						<label for="dessinsNul"> Aucun dessin :( </label><br>
-						<input id="dessinsFlammes" type="radio" name="dessins" value="flammes" required>
+						<input id="dessinsFlammes" type="radio" name="dessins" value="Flammes" required>
 						<label for="dessinsFlammes"> Flammes </label><br>
-						<input id="dessinsHelloKitty" type="radio" name="dessins" value="helloKitty" required>
+						<input id="dessinsHelloKitty" type="radio" name="dessins" value="Hello Kitty" required>
 						<label for="genreHomme"> Hello Kitty</label><br>
-						<input id="dessinsEtoiles" type="radio" name="dessins" value="etoiles" required>
+						<input id="dessinsEtoiles" type="radio" name="dessins" value="Etoiles" required>
 						<label for="dessinsEtoiles"> Etoiles </label><br>
-						<input id="dessinsNuages" type="radio" name="dessins" value="nuages" required>
+						<input id="dessinsNuages" type="radio" name="dessins" value="Nuages" required>
 						<label for="dessinsNuages"> Nuages </label><br>
 						<input id="boutonValider" type="submit" value="Créer">
 					</fieldset
@@ -61,6 +63,8 @@
 					<button id="bouton" type="button" onclick="afficherNomVoiture();">Rêvons </button>               
 					<button type="button" onclick="supprimerVoiture();">Supprimer le rêve :(</button> <br>   
 				</div>
+			</section>
+			<section>
 			</section>
 			<footer>
 			</footer>
