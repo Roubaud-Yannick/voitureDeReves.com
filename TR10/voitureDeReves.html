@@ -4,13 +4,15 @@
 		<meta charset="UTF-8">
 		<title>Mon Site</title>
 		<script src="JS/voitureDeReves.js"> </script>
-		<link type="text/css" rel="stylesheet" href="">
+		<link type="text/css" rel="stylesheet" href="CSS/voitureDeReves.css">
 		</head>
 		<body onload="chargement()">
+		<!-- <img src="IMG/pimpMyRide.jpg" id="pimpMyRide"> -->
 			<section>
 				<form id="formulaireVoiture" action=# onSubmit="return afficherVoiture(this)"><br>
 					<fieldset>
 						<legend>La voiture de vos rêves</legend>
+						<img src="IMG/modelesVoiture.jpg" alt="différent modèles de voitures disponible">
 						<label for="nom">Nom:</label>
 						<input type="text" id="nom" name="nom" required><br>
 						<label for="genre">Quel genre recherchez vous ? :</label>
@@ -53,20 +55,19 @@
 						<label for="dessinsEtoiles"> Etoiles </label><br>
 						<input id="dessinsNuages" type="radio" name="dessins" value="Nuages" required>
 						<label for="dessinsNuages"> Nuages </label><br>
+						<label for="vitesseMin">Quel serait sa vitesse minimum ?</label>
+						<input id="vitesseMin" type="number" min="1" name="vitesseMin" required>(en km/h)<br>
+						<label for="vitesseMax">Et le plus important: Quel serait sa vitesse maximum ?</label>
+						<input id="vitesseMax" type="number" min="1" name="vitesseMax" required>(en km/h)<br>
 						<input id="boutonValider" type="submit" value="Créer">
 					</fieldset
-				</form>
-				<div id="affichageVoiture">                                                                
-					<p>Résultat : Pas encore de rêves :( </p>                                
-				</div>   
-				<div id="boutonsAffichage">                                                                  
-					<button id="bouton" type="button" onclick="afficherNomVoiture();">Rêvons </button>               
-					<button type="button" onclick="supprimerVoiture();">Supprimer le rêve :(</button> <br>   
-				</div>
+				</form>  
 			</section>
 			<section>
 			</section>
 			<footer>
+				Travail intégralement réalisé par Yannick Roubaud élève étudiant en première année d'informatique à l'EPHEC lors du mois de décembre 2020<br>
+				<a href="https://github.com/Roubaud-Yannick/voitureDeReves.com">Mon GitHub</a>
 			</footer>
 		</body>
 	</html>

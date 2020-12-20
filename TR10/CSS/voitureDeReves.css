@@ -1,0 +1,28 @@
+.bouton:hover { 
+	color: red;
+}
+
+section {
+	font-family: Monospace;
+	font-size: 18px;
+}
+
+table, td, th {
+	border: black solid 1px;
+	background-color: #6495ED;
+	color:#ADFF2F;
+}
+
+img {
+	float: right;
+	height: 350px;
+}
+
+body { 
+	background-image: url("../IMG/pimpMyRide.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+footer {
+	text-align: right;
+}
